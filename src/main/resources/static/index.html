@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gemini Nano Banana | Google Labs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="top-bar">
+      <div class="brand">
+        <span class="brand-icon" aria-hidden="true">🍌</span>
+        <span class="brand-title">Gemini Nano Banana</span>
+      </div>
+      <nav class="nav-links">
+        <a href="#vision">Vision</a>
+        <a href="#labs">Labs</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#cta" class="pill">Request Access</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="vision">
+        <div class="hero-copy">
+          <h1>Google Gemini Nano Banana</h1>
+          <p>
+            A flavor-forward multimodal model tuned for playful prototyping and
+            on-device delight. Nano Banana makes Gemini intelligence
+            small-enough to ship and bright-enough to wow.
+          </p>
+          <div class="hero-actions">
+            <button class="primary" id="primary-cta">Launch Playground</button>
+            <button class="secondary" id="tour-trigger">Take the Product Tour</button>
+          </div>
+        </div>
+        <div class="hero-visual" role="presentation">
+          <div class="orbital">
+            <div class="planet"></div>
+            <div class="orbit"></div>
+            <div class="accent accent-1"></div>
+            <div class="accent accent-2"></div>
+          </div>
+          <p class="visual-caption">Optimized for ambient intelligence across voice, vision &amp; text.</p>
+        </div>
+      </section>
+
+      <section class="feature-grid" aria-label="Key capabilities">
+        <article class="feature-card">
+          <h3>Sub-7ms Latency</h3>
+          <p>
+            Stream conversational responses on-device with a quantized core that
+            stays responsive even when offline.
+          </p>
+          <ul>
+            <li>GPU optional</li>
+            <li>Works with Android ML Kit</li>
+            <li>Optimized TPU Edge kernel</li>
+          </ul>
+        </article>
+        <article class="feature-card">
+          <h3>Banana Blend Context</h3>
+          <p>
+            Blend camera frames, sensor data, and text prompts to produce
+            context-aware experiences anywhere.
+          </p>
+          <ul>
+            <li>Vision-language fusion</li>
+            <li>Privacy-safe embeddings</li>
+            <li>Adaptive prompt adapters</li>
+          </ul>
+        </article>
+        <article class="feature-card">
+          <h3>Snackable SDK</h3>
+          <p>
+            Drop the Nano Banana SDK into Android Studio or Flutter, complete
+            with Material 3 components.
+          </p>
+          <ul>
+            <li>Sample recipes</li>
+            <li>Jetpack integration</li>
+            <li>Cross-platform bindings</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="labs" id="labs">
+        <div class="labs-intro">
+          <h2>Playground Labs</h2>
+          <p>
+            Prototype delightful experiences with guided templates, telemetry
+            sandboxes, and ethical guardrails built-in from the start.
+          </p>
+        </div>
+        <div class="labs-panels">
+          <article class="lab-card">
+            <h3>Prompt Mixer</h3>
+            <p>
+              Combine tone, modality, and context boosters. Export tested prompts
+              directly into your favorite IDE.
+            </p>
+          </article>
+          <article class="lab-card">
+            <h3>Edge Performance Studio</h3>
+            <p>
+              Visualize token budgets, thermal envelopes, and power draw across
+              device classes before you ship.
+            </p>
+          </article>
+          <article class="lab-card">
+            <h3>Responsible Launch Kit</h3>
+            <p>
+              Ship confidently with bias audits, red-team scenarios, and live
+              policy updates from Google’s governance council.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="prompt-lab" aria-labelledby="prompt-lab-heading">
+        <div class="prompt-lab-inner">
+          <div class="prompt-lab-copy">
+            <h2 id="prompt-lab-heading">Prompt Lab</h2>
+            <p>
+              Explore how Nano Banana adapts tone and modality in real time.
+              Choose a vibe, add your context, and preview Gemini’s response.
+            </p>
+          </div>
+          <form id="prompt-form" class="prompt-form" autocomplete="off">
+            <div class="field-group">
+              <label for="tone">Tone</label>
+              <select id="tone" name="tone">
+                <option value="playful">Playful Product Coach</option>
+                <option value="professional">Professional Product Brief</option>
+                <option value="technical">Technical Partner Update</option>
+              </select>
+            </div>
+            <div class="field-group">
+              <label for="modality">Modality Booster</label>
+              <select id="modality" name="modality">
+                <option value="voice">Voice + Text</option>
+                <option value="vision">Vision + Text</option>
+                <option value="ambient">Ambient Sensors</option>
+              </select>
+            </div>
+            <div class="field-group">
+              <label for="prompt">Your Context</label>
+              <textarea
+                id="prompt"
+                name="prompt"
+                rows="4"
+                placeholder="Describe the experience you want Gemini Nano Banana to power."
+              ></textarea>
+            </div>
+            <button type="submit" class="primary">Generate Preview</button>
+          </form>
+          <div class="prompt-preview" aria-live="polite">
+            <h3>Gemini Preview</h3>
+            <p id="preview-output">Select your tone and modality to see Nano Banana in action.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="timeline" id="roadmap">
+        <h2>Launch Roadmap</h2>
+        <ol class="timeline-list">
+          <li>
+            <span class="timeline-date">Q1</span>
+            <div>
+              <h3>Founders' Early Access</h3>
+              <p>Private preview with guided onboarding and design office hours.</p>
+            </div>
+          </li>
+          <li>
+            <span class="timeline-date">Q2</span>
+            <div>
+              <h3>SDK + Device Lab</h3>
+              <p>Expanded tooling, emulator snapshots, and Chrome DevTools plug-ins.</p>
+            </div>
+          </li>
+          <li>
+            <span class="timeline-date">Q3</span>
+            <div>
+              <h3>Public Beta</h3>
+              <p>Material 3 UI kit, OAuth scopes, and Google Workspace add-ons.</p>
+            </div>
+          </li>
+          <li>
+            <span class="timeline-date">Q4</span>
+            <div>
+              <h3>General Availability</h3>
+              <p>Production SLA, partner marketplace, and Google Cloud billing.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="cta" id="cta">
+        <div class="cta-inner">
+          <h2>Build the next generation of ambient assistants</h2>
+          <p>
+            Tell us about your product vision and we’ll pair you with a Nano
+            Banana specialist for prototyping support.
+          </p>
+          <a class="primary" href="mailto:nanobanana@googlelabs.dev">Request a Partner Session</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2025 Google Labs – Gemini Nano Banana Experiment.</p>
+      <p class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Responsible AI</a>
+        <a href="#">Support</a>
+      </p>
+    </footer>
+
+    <div class="tour-modal" id="tour-modal" role="dialog" aria-modal="true" aria-labelledby="tour-title" hidden>
+      <div class="tour-content">
+        <button class="close" id="tour-close" aria-label="Close tour">&times;</button>
+        <h2 id="tour-title">Nano Banana Tour</h2>
+        <ol>
+          <li><strong>Design:</strong> Start with Material 3 starter kits tuned for bright product moments.</li>
+          <li><strong>Prototype:</strong> Use Playground Labs to simulate multimodal prompts.</li>
+          <li><strong>Ship:</strong> Export SDK configs to Android Studio and Flutter.</li>
+        </ol>
+        <button class="primary" id="tour-cta">Explore Labs</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
