@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Gemini Nano Banana | Developer Preview</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="top-nav">
+      <div class="brand">
+        <div class="brand-icon" aria-hidden="true">🍌</div>
+        <div>
+          <span class="brand-name">Gemini Nano Banana</span>
+          <span class="brand-subtitle">by Google Research</span>
+        </div>
+      </div>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#overview">Overview</a>
+        <a href="#capabilities">Capabilities</a>
+        <a href="#benchmarks">Benchmarks</a>
+        <a href="#toolkit">Toolkit</a>
+        <a href="#cta">Get Access</a>
+      </nav>
+      <button class="nav-cta">Join the Preview</button>
+    </header>
+
+    <main>
+      <section id="overview" class="hero">
+        <div class="hero-copy">
+          <h1>Generative intelligence for ambient experiences.</h1>
+          <p>
+            Gemini Nano Banana is the lightweight, privacy-preserving member of the
+            Gemini family. Optimize immersive, multimodal experiences across vision,
+            audio, and natural language &mdash; all on-device.
+          </p>
+          <div class="hero-actions">
+            <button class="primary">Request Access</button>
+            <button class="secondary" data-scroll="#capabilities">See what&#8217;s new</button>
+          </div>
+          <dl class="stat-grid" aria-label="Key launch metrics">
+            <div>
+              <dt>70%</dt>
+              <dd>Lower latency vs. cloud inference</dd>
+            </div>
+            <div>
+              <dt>98%</dt>
+              <dd>On-device privacy coverage</dd>
+            </div>
+            <div>
+              <dt>12</dt>
+              <dd>Multimodal task adapters</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="orb"></div>
+          <div class="device-card">
+            <p class="device-label">Adaptive Edge Nodes</p>
+            <p class="device-title">Gemini Nano Banana</p>
+            <p class="device-spec">Latency &lt; 35ms | Context 1.5M tokens</p>
+            <div class="device-gradient"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="capabilities" class="capabilities">
+        <header>
+          <h2>Precision multimodality meets responsible deployment.</h2>
+          <p>
+            Combine compact transformer efficiency with the expressive power of
+            Gemini. Nano Banana introduces multi-turn reasoning, temporal awareness,
+            and sensor fusion optimized for ambient and wearable surfaces.
+          </p>
+        </header>
+        <div class="capability-grid">
+          <article>
+            <h3>AudioSense</h3>
+            <p>
+              Detect, isolate, and summarize acoustic events in real-time with
+              automatic bilingual captioning.
+            </p>
+            <ul>
+              <li>Spatial beamforming with earbud array SDK</li>
+              <li>Edge-to-cloud semantic sync in under 150ms</li>
+              <li>Automatic privacy scrubbing for PII</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Vision Loop</h3>
+            <p>
+              Understand scenes, text, and gestures with sub-10ms perception loops
+              tailored for lightweight XR and AR experiences.
+            </p>
+            <ul>
+              <li>Supports streaming RGB, depth, and thermal feeds</li>
+              <li>Optimized for WebGPU / Vulkan compute</li>
+              <li>High-fidelity captioning with dynamic prompts</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Contextual Mesh</h3>
+            <p>
+              Merge sensor data and user context to power helpful, ambient assistants
+              across devices.
+            </p>
+            <ul>
+              <li>Cross-device conversation state handoff</li>
+              <li>Policy guardrails tuned for responsible replies</li>
+              <li>Knowledge distillation from Gemini Advanced</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="benchmarks" class="benchmarks">
+        <div class="benchmarks-header">
+          <h2>Runtime profiles engineered for every surface.</h2>
+          <p>
+            Choose a deployment tier and we&#8217;ll show you the expected throughput,
+            thermal headroom, and recommended workloads.
+          </p>
+          <label class="select-label" for="profile-select">Deployment profile</label>
+          <div class="select-wrapper">
+            <select id="profile-select" aria-describedby="profile-description">
+              <option value="wearable">Wearable | 2.2 TOPS</option>
+              <option value="mobile">Mobile | 6.5 TOPS</option>
+              <option value="automotive">Automotive | 12 TOPS</option>
+              <option value="edge">Edge Rack | 35 TOPS</option>
+            </select>
+            <span class="select-icon" aria-hidden="true">▾</span>
+          </div>
+        </div>
+        <div id="profile-description" class="profile-card" role="status" aria-live="polite"></div>
+        <div class="benchmark-grid" aria-hidden="true">
+          <div class="benchmark-card">
+            <h3>3.4x</h3>
+            <p>Tokenizer throughput vs. previous Nano release</p>
+          </div>
+          <div class="benchmark-card">
+            <h3>1.9M</h3>
+            <p>Token context window with Banana compression</p>
+          </div>
+          <div class="benchmark-card">
+            <h3>22%</h3>
+            <p>Thermal reduction from new quantization stack</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="toolkit" class="toolkit">
+        <header>
+          <h2>Developer toolkit</h2>
+          <p>Launch faster with modular SDKs, guardrails, and instrumentation.</p>
+        </header>
+        <div class="toolkit-grid">
+          <article>
+            <h3>Banana SDK</h3>
+            <p>
+              Reference clients for Android, Chrome, Flutter, and React with
+              auto-run tuning recipes for your workloads.
+            </p>
+            <a class="text-link" href="#">View SDK docs</a>
+          </article>
+          <article>
+            <h3>Responsible AI Kit</h3>
+            <p>
+              Built-in policy evaluators, flagged content routing, and inclusive
+              language moderation tuned to regional norms.
+            </p>
+            <a class="text-link" href="#">Review policy checklist</a>
+          </article>
+          <article>
+            <h3>Observability Studio</h3>
+            <p>
+              Streaming telemetry with timeline scrubbing, anomaly detection, and
+              sandboxed reproduction flows.
+            </p>
+            <a class="text-link" href="#">Launch dashboards</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="cta" class="cta">
+        <h2>Shape the future of ambient computing.</h2>
+        <p>
+          Join the Google developer preview to ship experiences backed by the newest
+          Gemini Nano Banana runtimes.
+        </p>
+        <form class="cta-form">
+          <label for="email" class="sr-only">Work email</label>
+          <input type="email" id="email" name="email" placeholder="Work email" required />
+          <label for="team-size" class="sr-only">Team size</label>
+          <select id="team-size" name="team-size">
+            <option value="1-10">1&ndash;10</option>
+            <option value="11-50">11&ndash;50</option>
+            <option value="51-200">51&ndash;200</option>
+            <option value="200+">200+</option>
+          </select>
+          <button type="submit">Request invite</button>
+        </form>
+        <p class="cta-footnote">
+          We respect your inbox. Expect program updates, release notes, and invites to
+          private labs.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2025 Google Research. Gemini Nano Banana is experimental hardware.</p>
+      <nav aria-label="Secondary">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Responsible AI</a>
+      </nav>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
