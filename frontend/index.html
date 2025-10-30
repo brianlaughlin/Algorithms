@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gemini Nano Banana | Ambient AI for Everyone</title>
+  <meta name="description" content="Explore Gemini Nano Banana, Google's playful on-device AI that blends powerful multimodal reasoning with delightful everyday experiences." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="theme-light">
+  <header class="site-header" id="top">
+    <div class="site-header__bar">
+      <div class="site-header__branding">
+        <div class="site-header__logo" aria-hidden="true">🍌</div>
+        <div>
+          <span class="site-header__product">Gemini Nano Banana</span>
+          <span class="site-header__tagline">Ambient Intelligence, Anywhere</span>
+        </div>
+      </div>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <button class="site-nav__toggle" aria-expanded="false" aria-controls="mobile-nav">Menu</button>
+        <ul class="site-nav__links" id="mobile-nav">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#use-cases">Use cases</a></li>
+          <li><a href="#showcase">Showcase</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="site-header__actions">
+        <button class="button button--ghost" data-theme-toggle aria-pressed="false">Toggle dark mode</button>
+        <a class="button" href="#contact">Request access</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__content">
+        <h1 id="hero-title">Bring multimodal AI to every pocket with Gemini Nano Banana</h1>
+        <p class="hero__lead">Designed for on-device creativity, context-aware assistance, and privacy-first intelligence. Gemini Nano Banana pairs Google's Gemini Nano model with playful personality to brighten your user's journey.</p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="#showcase">Launch live preview</a>
+          <a class="button button--ghost" href="#features">Explore capabilities</a>
+        </div>
+        <dl class="hero__stats" aria-label="Key capabilities">
+          <div>
+            <dt>45+ multimodal skills</dt>
+            <dd>Vision, audio, and text understanding tuned for mobile silicon.</dd>
+          </div>
+          <div>
+            <dt>&lt; 120ms response</dt>
+            <dd>Optimized for responsive on-device interactions without cloud latency.</dd>
+          </div>
+          <div>
+            <dt>Privacy-forward</dt>
+            <dd>All inference happens on-device with federated updates for accuracy.</dd>
+          </div>
+        </dl>
+      </div>
+      <aside class="hero__panel" aria-label="Product highlights">
+        <div class="highlight-card">
+          <h2>New in 2.5</h2>
+          <ul>
+            <li>Context stitching between apps</li>
+            <li>Banana Peel UI kit for material-inspired surfaces</li>
+            <li>Gem Synth to remix humming into harmonies</li>
+          </ul>
+          <a class="button button--tiny" href="#changelog">View changelog</a>
+        </div>
+        <div class="highlight-card highlight-card--accent">
+          <h2>Playful sandbox</h2>
+          <p>Prototype brand voices, interactive stories, and assistive features in minutes.</p>
+          <button class="button button--tiny" data-scroll="#playground">Open sandbox</button>
+        </div>
+      </aside>
+    </section>
+
+    <section class="pill-tray" aria-label="Partner recognition">
+      <p class="pill-tray__title">Trusted by creative labs worldwide</p>
+      <div class="pill-tray__items">
+        <span>Google ATAP</span>
+        <span>Pixel Foundry</span>
+        <span>Loon Labs</span>
+        <span>Area 120</span>
+        <span>Fuchsia Studio</span>
+        <span>DeepMind Sandbox</span>
+      </div>
+    </section>
+
+    <section class="feature-grid" id="features" aria-labelledby="features-title">
+      <div class="section-heading">
+        <h2 id="features-title">Design delightful, multimodal experiences</h2>
+        <p>Blend text, audio, sensor data, and visuals without leaving your user's device. Gemini Nano Banana balances enterprise-grade AI with whimsical flourishes.</p>
+      </div>
+      <div class="feature-grid__items">
+        <article class="card is-visible" aria-label="Context aware co-pilot">
+          <h3>Context aware co-pilot</h3>
+          <p>Summarize screens, auto-complete forms, and stage proactive suggestions with user-granted context windows.</p>
+        </article>
+        <article class="card" aria-label="Multimodal mashups">
+          <h3>Multimodal mashups</h3>
+          <p>Blend sensor readings, camera frames, and live captions for experiences that feel like science fiction.</p>
+        </article>
+        <article class="card" aria-label="Banana Peel UI kit">
+          <h3>Banana Peel UI kit</h3>
+          <p>Accelerate interface concepts with Material 3-compatible components, gradients, and iconography.</p>
+        </article>
+        <article class="card" aria-label="Responsible by design">
+          <h3>Responsible by design</h3>
+          <p>Built-in consent flows, auditable prompts, and guardrails that adapt to local regulations.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="use-case" id="use-cases" aria-labelledby="use-cases-title">
+      <div class="section-heading">
+        <h2 id="use-cases-title">Shape the future with focused templates</h2>
+        <p>Switch between blueprints to see how Nano Banana speeds up product teams and storytellers alike.</p>
+      </div>
+      <div class="use-case__filters" role="radiogroup" aria-label="Filter use case examples">
+        <button class="chip is-active" data-filter="all" role="radio" aria-checked="true">All</button>
+        <button class="chip" data-filter="on-device" role="radio" aria-checked="false">On-device agents</button>
+        <button class="chip" data-filter="developer" role="radio" aria-checked="false">Developer tools</button>
+        <button class="chip" data-filter="education" role="radio" aria-checked="false">Education</button>
+        <button class="chip" data-filter="wellness" role="radio" aria-checked="false">Wellness</button>
+      </div>
+      <div class="use-case__grid">
+        <article class="card" data-category="on-device">
+          <h3>Ambient inbox concierge</h3>
+          <p>Compose smart replies, surface attachments, and set reminders directly on-device without sharing raw data.</p>
+          <span class="badge">On-device agents</span>
+        </article>
+        <article class="card" data-category="developer">
+          <h3>Gem mini-lab</h3>
+          <p>Generate test fixtures, run multi-turn prompts, and auto-document APIs inside Android Studio.</p>
+          <span class="badge">Developer tools</span>
+        </article>
+        <article class="card" data-category="education">
+          <h3>Campus companion</h3>
+          <p>Translate lectures live, summarize notes, and gamify revision sessions in playful banana themes.</p>
+          <span class="badge">Education</span>
+        </article>
+        <article class="card" data-category="wellness">
+          <h3>Mindful moments</h3>
+          <p>Guide breathing sessions, adapt to biosignals, and journal progress with empathetic tone matching.</p>
+          <span class="badge">Wellness</span>
+        </article>
+        <article class="card" data-category="on-device">
+          <h3>Lens storyteller</h3>
+          <p>Create narrated photo memories that stitch audio, doodles, and translations on the fly.</p>
+          <span class="badge">On-device agents</span>
+        </article>
+        <article class="card" data-category="developer">
+          <h3>Prompt diff explorer</h3>
+          <p>Compare prompt revisions, visualize embeddings, and push updates to Gemini Experiments safely.</p>
+          <span class="badge">Developer tools</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="showcase" id="showcase" aria-labelledby="showcase-title">
+      <div class="section-heading">
+        <h2 id="showcase-title">See Nano Banana in action</h2>
+        <p>Preview the ambient assistant overlay, banana peel component kit, and cross-device continuity.</p>
+      </div>
+      <div class="showcase__layout">
+        <div class="showcase__demo">
+          <div class="device-frame" role="presentation">
+            <div class="device-frame__screen">
+              <p class="device-frame__label">Ambient overlay</p>
+              <div class="device-frame__chat">
+                <div class="bubble bubble--user">Hey Banana, can you remix this melody for bedtime?</div>
+                <div class="bubble bubble--assistant">Absolutely! Soft marimba with chime harmonies coming right up. Want to add rainforest ambience?</div>
+                <div class="bubble bubble--user">Yes please, keep it under one minute.</div>
+                <div class="bubble bubble--assistant">Done. I also generated a playful cover illustration based on your latest doodle.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <aside class="showcase__sidebar">
+          <div class="timeline">
+            <h3>Experience beats</h3>
+            <ol>
+              <li>
+                <strong>Sense</strong>
+                <p>Capture cues from camera, microphone, or context sheet.</p>
+              </li>
+              <li>
+                <strong>Glow</strong>
+                <p>Gemini distills what matters and infuses Banana's playful tone.</p>
+              </li>
+              <li>
+                <strong>Delight</strong>
+                <p>Users receive an adaptive response with animated peel transitions.</p>
+              </li>
+            </ol>
+          </div>
+          <div class="scorecard">
+            <h3>Performance snapshot</h3>
+            <ul>
+              <li><span>Latency</span><strong>96ms median</strong></li>
+              <li><span>Energy</span><strong>15% lower draw</strong></li>
+              <li><span>Sentiment lift</span><strong>+28 NPS</strong></li>
+            </ul>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="playground" id="playground" aria-labelledby="playground-title">
+      <div class="section-heading">
+        <h2 id="playground-title">Prototype faster with the Banana Playground</h2>
+        <p>Customize prompts, voices, and whimsical flourishes. Export directly to Android, Flutter, or web experiments.</p>
+      </div>
+      <div class="playground__panel">
+        <form class="playground__form">
+          <label class="field">
+            <span>Persona tone</span>
+            <select>
+              <option>Playful guide</option>
+              <option>Studio producer</option>
+              <option>Mindful coach</option>
+              <option>STEM mentor</option>
+            </select>
+          </label>
+          <label class="field">
+            <span>Response length</span>
+            <input type="range" min="1" max="5" value="3" />
+          </label>
+          <label class="field">
+            <span>Signature flourish</span>
+            <input type="text" placeholder="e.g. Banana-scented sparkle" />
+          </label>
+          <button type="button" class="button button--primary">Generate preview</button>
+        </form>
+        <div class="playground__preview" aria-live="polite">
+          <p class="preview__label">Preview transcript</p>
+          <div class="preview__bubble">🌙 Banana: Here's your lullaby with gentle rainforest ambience and a sprinkle of banana-scented sparkle.</div>
+          <div class="preview__bubble preview__bubble--system">System note: Export ready for Android dynamic color.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing" id="pricing" aria-labelledby="pricing-title">
+      <div class="section-heading">
+        <h2 id="pricing-title">Simple plans for playful innovation</h2>
+        <p>Scale from indie experiments to global rollouts with usage-based access. Toggle for annual savings.</p>
+      </div>
+      <div class="pricing__toggle" role="group" aria-label="Choose billing frequency">
+        <span>Monthly</span>
+        <label class="switch">
+          <input type="checkbox" id="billing-toggle" aria-label="Toggle annual billing" />
+          <span class="slider" aria-hidden="true"></span>
+        </label>
+        <span>Annual <span class="badge badge--accent">Save 15%</span></span>
+      </div>
+      <div class="pricing__grid">
+        <article class="card">
+          <h3>Indie Peel</h3>
+          <p class="price" data-monthly="$29" data-annual="$24">
+            <span class="price__value">$29</span>
+            <span class="price__suffix">/mo</span>
+          </p>
+          <ul>
+            <li>Up to 5k requests</li>
+            <li>Banana Peel UI kit</li>
+            <li>Community support</li>
+          </ul>
+          <button class="button button--primary">Start tinkering</button>
+        </article>
+        <article class="card card--highlight">
+          <h3>Studio Grove</h3>
+          <p class="price" data-monthly="$99" data-annual="$84">
+            <span class="price__value">$99</span>
+            <span class="price__suffix">/mo</span>
+          </p>
+          <ul>
+            <li>50k requests &amp; analytics</li>
+            <li>Realtime multimodal APIs</li>
+            <li>Voice &amp; audio composer</li>
+          </ul>
+          <button class="button button--primary">Scale creativity</button>
+        </article>
+        <article class="card">
+          <h3>Enterprise Bunch</h3>
+          <p class="price" data-monthly="Custom" data-annual="Custom">
+            <span class="price__value">Custom</span>
+            <span class="price__suffix"></span>
+          </p>
+          <ul>
+            <li>Dedicated support crew</li>
+            <li>Compliance tooling</li>
+            <li>Federated learning upgrades</li>
+          </ul>
+          <button class="button button--ghost">Contact sales</button>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta" aria-labelledby="cta-title">
+      <div class="cta__content">
+        <h2 id="cta-title">Ready to ship your sweetest AI experiences?</h2>
+        <p>Join the Banana Grove beta and co-design the future of joyful, responsible ambient computing.</p>
+        <a class="button button--primary" href="#contact">Book a co-creation session</a>
+      </div>
+      <div class="cta__decor" aria-hidden="true">
+        <div class="ring"></div>
+        <div class="ring"></div>
+        <div class="ring"></div>
+      </div>
+    </section>
+
+    <section class="faq" id="faq" aria-labelledby="faq-title">
+      <div class="section-heading">
+        <h2 id="faq-title">Frequently asked questions</h2>
+        <p>Everything you need to know before you invite Gemini Nano Banana into your product.</p>
+      </div>
+      <div class="accordion" role="list">
+        <article class="accordion__item" role="listitem">
+          <button class="accordion__trigger" aria-expanded="false">
+            How does Nano Banana protect user privacy?
+          </button>
+          <div class="accordion__content" hidden>
+            <p>Inference happens fully on-device, with optional federated model updates that keep raw data grounded locally. Consent APIs are built in, and governance dashboards help you audit prompt flows.</p>
+          </div>
+        </article>
+        <article class="accordion__item" role="listitem">
+          <button class="accordion__trigger" aria-expanded="false">
+            What platforms are supported?
+          </button>
+          <div class="accordion__content" hidden>
+            <p>Android, ChromeOS, and desktop Chrome ship first. Flutter, web, and experimental XR shells receive regular updates via the Banana Peel UI kit.</p>
+          </div>
+        </article>
+        <article class="accordion__item" role="listitem">
+          <button class="accordion__trigger" aria-expanded="false">
+            Can I bring my own models?
+          </button>
+          <div class="accordion__content" hidden>
+            <p>Absolutely. Gemini Nano Banana supports model routing, so you can blend Gemini with custom distilled models while reusing the playful presentation layer.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact__info">
+        <h2 id="contact-title">Co-create with the Banana Grove team</h2>
+        <p>Tell us about your upcoming launch or concept sprint. We'll match you with the right prototypes, research, and support.</p>
+        <div class="contact__details">
+          <p><strong>Email:</strong> banana-grove@google.com</p>
+          <p><strong>Office hours:</strong> Tue–Thu · 10am – 4pm PT</p>
+        </div>
+      </div>
+      <form class="contact__form" aria-label="Request early access">
+        <label class="field">
+          <span>Full name</span>
+          <input type="text" name="name" autocomplete="name" placeholder="Ada Lovelace" required />
+        </label>
+        <label class="field">
+          <span>Work email</span>
+          <input type="email" name="email" autocomplete="email" placeholder="you@studio.com" required />
+        </label>
+        <label class="field">
+          <span>Team focus</span>
+          <input type="text" name="team" placeholder="Education, wellness, ambient agents..." />
+        </label>
+        <label class="field">
+          <span>What would you build first?</span>
+          <textarea name="goals" rows="4" placeholder="Share your banana-flavored vision"></textarea>
+        </label>
+        <button type="submit" class="button button--primary">Request beta invite</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__branding">
+      <div class="site-header__logo" aria-hidden="true">🍌</div>
+      <span>Gemini Nano Banana</span>
+    </div>
+    <nav aria-label="Secondary navigation">
+      <a href="#top">Back to top</a>
+      <a href="#faq">Support</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
+    <p class="site-footer__note">Built with Google's responsibility commitments and a dash of banana magic.</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
